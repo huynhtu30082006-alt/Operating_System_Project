@@ -130,6 +130,16 @@ Gantt charts allow users to:
 
 > Additionally, the GUI supports calculating `Average Waiting Time` and `Average Turnaround Time` to help users easily evaluate and gain a clearer understanding of the advantages and disadvantages of each algorithm.
 
+### Exported Output (CSV File)   
+After performing the calculations and printing the results to the screen, the application can export the results to a CSV file in the output folder.   
+
+The output CSV file contains detailed scheduling results for each process, with saved information including the results of the 8 columns in On Screen Output.
+
+//picture example   
+
+> This CSV file can be used to verify the correctness of the scheduling result and to compare with textbook examples.
+
+Example:
 
  
 
