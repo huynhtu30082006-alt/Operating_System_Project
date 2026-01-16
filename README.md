@@ -111,14 +111,11 @@ The results are stored and displayed as a table with 8 columns, including 3 colu
 | Waiting | The total time a process exists in the system |
 | Response | The time from when a process arrives until it is first processed by the CPU |  
 
-// Picture example
-
 ### 2️⃣ Gantt Chart Tab   
 The application displays a Gantt chart to visualize how CPU resources are allocated to each process over time.   
 
 Each cell in the Gantt chart represents a process being executed by the CPU, and the length of each cell indicates the unit of time each process needs to execute. Labels inside each cell indicate the process ID, while the numbers below show the start and end times of each execution segment.   
 
-// Picture example
 
 Gantt charts allow users to:   
 
@@ -134,12 +131,63 @@ Gantt charts allow users to:
 After performing the calculations and printing the results to the screen, the application can export the results to a CSV file in the output folder.   
 
 The output CSV file contains detailed scheduling results for each process, with saved information including the results of the 8 columns in On Screen Output.
-
-//picture example   
-
+   
 > This CSV file can be used to verify the correctness of the scheduling result and to compare with textbook examples.
 
-Example:
+## 🧪 Testing & Verification   
+
+- [x] To verify the correctness and performance of the CPU Scheduling application, we tested the system using various CSV input scenarios. These test cases were designed to validate both the FCFS and SJF (non-preferred) algorithms under normal and special conditions.   
+
+> The correctness of the simulation was verified by manually calculating the scheduling results according to the definitions of FCFS and SJF in the operating systems textbook, and comparing them with the output produced by the application.
+
+### 1️⃣ [Basic Text Book Case](https://www.qt.io/development/File_test_Scheduling/basic_test.csv)   
+
+#### Input
+Process,Arrival,Burst      
+P1,0,4   
+P2,1,3   
+P3,2,1   
+P4,3,2   
+
+#### Purpose   
+This case is used to compare the application output with standard textbook examples.   
+   
+#### Original formula   
+
+For any process `i`:   
+
+- `Start Time[i] = max(Completion Time of previous process, Arrival Time[i])`.
+
+- `Completion Time[i] = Start Time[i] + Burst Time[i]`.
+    
+- `Turnaround Time[i] = Completion Time[i] - Arrival Time[i]`.
+
+- `Waiting Time[i] = Turnaround Time[i] - Burst Time[i]`.
+
+- `Response Time[i] = Start Time[i] - Arrival Time[i]`.
+
+- `Average Waiting Time = (Total Waiting Time Of All Process) / n ( with n is the number of process)`.   
+   
+- `Average Turnaround Time = (Total Turnaround Time Of All Process) / n`.   
+
+#### Expected behavior   
+- FCFS
+
+Table   
+
+| PID | Arrival | Burst | Start | Completion | Turnaround | Waiting | Response |
+| --- | --- | ----- | ----- | ------ | ---- | ---------- | --------- |   
+| P1 | 0 | 4 | 0 | 4 | 4 | 0 | 0 |
+| P2 | 1 | 3 |  | ------ | ---- | ---------- | --------- |  
+| P3 | 2 | 1 | Start | Completion | Turnaround | Waiting | Response |
+| P4 | 3 | 2 | ----- | ------ | ---- | ---------- | --------- |  
+
+
+
+
+
+
+
 
  
 
