@@ -173,14 +173,85 @@ For any process `i`:
 #### Expected behavior   
 - FCFS
 
-Table   
+🗓️ Table   
 
 | PID | Arrival | Burst | Start | Completion | Turnaround | Waiting | Response |
 | --- | --- | ----- | ----- | ------ | ---- | ---------- | --------- |   
 | P1 | 0 | 4 | 0 | 4 | 4 | 0 | 0 |
-| P2 | 1 | 3 |  | ------ | ---- | ---------- | --------- |  
-| P3 | 2 | 1 | Start | Completion | Turnaround | Waiting | Response |
-| P4 | 3 | 2 | ----- | ------ | ---- | ---------- | --------- |  
+| P2 | 1 | 3 | 4 | 7 | 6 | 3 | 3 |  
+| P3 | 2 | 1 | 7 | 8 | 6 | 5 | 5 |
+| P4 | 3 | 2 | 8 | 10 | 7 | 5 | 5 |  
+
+📊 Gantt   
+
+0 ── P1 ── 4 ── P2 ── 7 ─ P3 ─ 8 ── P4 ── 10   
+
+Average Waiting Time = 3.25    
+Average Turnaround Time = 5.75     
+
+- SJF
+
+🗓️ Table   
+
+| PID | Arrival | Burst | Start | Completion | Turnaround | Waiting | Response |
+| --- | --- | ----- | ----- | ------ | ---- | ---------- | --------- |   
+| P1 | 0 | 4 | 0 | 4 | 4 | 0 | 0 |   
+| P3 | 2 | 1 | 4 | 5 | 3 | 2 | 2 |
+| P4 | 3 | 2 | 5 | 7 | 4 | 2 | 2 | 
+| P2 | 1 | 3 | 7 | 10 | 9 | 6 | 6 |   
+
+
+📊 Gantt   
+
+0 ── P1 ── 4 ── P3 ── 5 ─ P4 ─ 7 ── P2 ── 10   
+
+Average Waiting Time = 2.5      
+Average Turnaround Time = 5     
+
+// ảnh   
+
+### 2️⃣ [Long Job Case](https://www.qt.io/development/File_test_Scheduling/long_job.csv)   
+
+#### Input
+Process,Arrival,Burst      
+P1,0,10
+P2,1,1
+P3,2,1
+P4,3,1   
+
+#### Purpose   
+This test case demonstrates the convoy effect in FCFS scheduling, where a long process arriving first causes shorter processes to experience long waiting times.
+The same input is also used to compare the performance of FCFS and non-preemptive SJF.   
+
+In this test case, FCFS and non-preemptive SJF produce identical results because the long process arrives first and cannot be preempted.
+Shorter processes arrive while the CPU is busy and must wait until the current process completes.
+
+#### Expected behavior (Same Output)   
+
+🗓️ Table  
+
+| PID | Arrival | Burst | Start | Completion | Turnaround | Waiting | Response |
+| --- | --- | ----- | ----- | ------ | ---- | ---------- | --------- |   
+| P1 | 0 | 10 | 0 | 10 | 10 | 0 | 0 |
+| P2 | 1 | 1 | 10 | 11 | 10 | 9 | 9 |  
+| P3 | 2 | 1 | 11 | 12 | 10 | 9 | 9 |
+| P4 | 3 | 1 | 12 | 13 | 10 | 9 | 9 |  
+
+📊 Gantt   
+
+0 ── P1 ── 10 ── P2 ── 11 ─ P3 ─ 12 ── P4 ── 13    
+
+Average Waiting Time = 6.75      
+Average Turnaround Time = 10   
+
+### 3️⃣ [Same Arrival Time Case](https://www.qt.io/development/File_test_Scheduling/same_arrival_time.csv)   
+
+
+
+
+
+
+
 
 
 
