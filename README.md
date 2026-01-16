@@ -213,11 +213,11 @@ Average Turnaround Time = 5
 ### 2️⃣ [Long Job Case](https://www.qt.io/development/File_test_Scheduling/long_job.csv)   
 
 #### Input
-Process,Arrival,Burst      
-P1,0,10
-P2,1,1
-P3,2,1
-P4,3,1   
+Process,Arrival,Burst         
+P1,0,10   
+P2,1,1   
+P3,2,1   
+P4,3,1      
 
 #### Purpose   
 This test case demonstrates the convoy effect in FCFS scheduling, where a long process arriving first causes shorter processes to experience long waiting times.
