@@ -244,7 +244,96 @@ Shorter processes arrive while the CPU is busy and must wait until the current p
 Average Waiting Time = 6.75      
 Average Turnaround Time = 10   
 
-### 3️⃣ [Same Arrival Time Case](https://www.qt.io/development/File_test_Scheduling/same_arrival_time.csv)   
+### 3️⃣ [Same Arrival Time Case](https://www.qt.io/development/File_test_Scheduling/same_arrival_time.csv)      
+   
+#### Input   
+Process,Arrival,Burst    
+P1,0,8   
+P2,0,4   
+P3,0,2   
+P4,0,1   
+
+#### Purpose    
+Check the processing order when the Arrival Time of all Processes is equal.   
+      
+#### Expected behavior   
+- FCFS
+
+🗓️ Table   
+
+| PID | Arrival | Burst | Start | Completion | Turnaround | Waiting | Response |
+| --- | --- | ----- | ----- | ------ | ---- | ---------- | --------- |   
+| P1 | 0 | 8 | 0 | 8 | 8 | 0 | 0 |
+| P2 | 0 | 4 | 8 | 12 | 12 | 8 | 8 |  
+| P3 | 0 | 2 | 12 | 14 | 14 | 12 | 12 |
+| P4 | 0 | 1 | 14 | 15 | 15 | 14 | 14 |  
+
+📊 Gantt   
+
+0 ── P1 ── 8 ── P2 ── 12 ─ P3 ─ 14 ── P4 ── 15      
+
+Average Waiting Time = 8.5    
+Average Turnaround Time = 12.25        
+
+- SJF
+
+🗓️ Table   
+
+| PID | Arrival | Burst | Start | Completion | Turnaround | Waiting | Response |
+| --- | --- | ----- | ----- | ------ | ---- | ---------- | --------- |  
+| P4 | 0 | 1 | 0 | 1 | 1 | 0 | 0 |      
+| P3 | 0 | 2 | 1 | 3 | 3 | 1 | 1 |       
+| P2 | 0 | 4 | 3 | 7 | 7 | 3 | 3 |   
+| P1 | 0 | 8 | 7 | 15 | 15 | 7 | 7 |     
+   
+📊 Gantt   
+
+0 ── P4 ── 1 ── P3 ── 3 ─ P2 ─ 7 ── P1 ── 15            
+
+Average Waiting Time = 2.75       
+Average Turnaround Time = 6.5              
+
+// ảnh   
+
+### 4️⃣ [IDLE Case](https://www.qt.io/development/File_test_Scheduling/idle_cpu.csv)   
+
+#### Input   
+Process,Arrival,Burst    
+P1,0,3
+P2,6,4
+P3,7,2  
+
+#### Purpose    
+This test case verifies correct handling of CPU idle periods when no process is available in the ready queue.   
+
+The scheduler must wait until the next process arrives instead of executing prematurely.     
+      
+#### Expected behavior (Same Result)   
+
+🗓️ Table   
+
+| PID | Arrival | Burst | Start | Completion | Turnaround | Waiting | Response |
+| --- | --- | ----- | ----- | ------ | ---- | ---------- | --------- |   
+| P1 | 0 | 3 | 0 | 3 | 3 | 0 | 0 |
+| P2 | 6 | 4 | 6 | 10 | 4 | 0 | 0 |     
+| P3 | 7 | 2 | 10 | 12 | 5 | 3 | 3 |  
+
+📊 Gantt   
+
+0 ── P1 ── 3 ── IDLE ── 6 ── P2 ── 10 ─ P3 ─ 12       
+
+Average Waiting Time = 1          
+Average Turnaround Time = 4          
+
+### 5️⃣ [Performance test Case](https://www.qt.io/development/File_test_Scheduling/stress_input_120.csv)   
+
+| Test     | #Processes | Time (s) | RAM (MB) | Result |
+| -------- | ---------- | -------- | -------- | ------ |
+| Stress-1 | 100        | 0.02     | 32       | Pass   |
+| Stress-2 | 200        | 0.05     | 38       | Pass   |
+
+
+   
 
 
 
