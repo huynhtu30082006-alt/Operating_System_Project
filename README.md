@@ -53,7 +53,7 @@ All results can be exported to CSV for verification with textbook formulas and r
 - Run the executable file.
 
 ### Step 2 - Download CSV File   
-- Clone or [Download](https://www.qt.io/development/download) this repository to your computer. 
+- Clone or [Download](https://github.com/huynhtu30082006-alt/Operating_System_Project/tree/main/data) this repository to your computer. 
 - Click `Add Process` Button in GUI to choose a CSV file to add the program.
 
 ### Step 3 - Run scheduling Algorithms 
@@ -140,7 +140,7 @@ The output CSV file contains detailed scheduling results for each process, with 
 
 > The correctness of the simulation was verified by manually calculating the scheduling results according to the definitions of FCFS and SJF in the operating systems textbook, and comparing them with the output produced by the application.
 
-### 1️⃣ [Basic Text Book Case](https://www.qt.io/development/File_test_Scheduling/basic_test.csv)   
+### 1️⃣ [Basic Text Book Case](https://raw.githubusercontent.com)   
 
 #### Input
 Process,Arrival,Burst      
@@ -219,7 +219,7 @@ Average Turnaround Time = 5
 **Figure 4 – Result SJF Gantt Chart of Basic Test screenshot**  
 ![Result Basic Test](images/Image_4.png) 
 
-### 2️⃣ [Long Job Case](https://www.qt.io/development/File_test_Scheduling/long_job.csv)   
+### 2️⃣ [Long Job Case](https://raw.githubusercontent.com)   
 
 #### Input
 Process,Arrival,Burst         
@@ -253,7 +253,7 @@ Shorter processes arrive while the CPU is busy and must wait until the current p
 Average Waiting Time = 6.75      
 Average Turnaround Time = 10   
 
-### 3️⃣ [Same Arrival Time Case](https://www.qt.io/development/File_test_Scheduling/same_arrival_time.csv)      
+### 3️⃣ [Same Arrival Time Case](https://raw.githubusercontent.com)      
    
 #### Input   
 Process,Arrival,Burst    
@@ -314,7 +314,7 @@ Average Turnaround Time = 6.5
 **Figure 8 – Result FCFS Gantt Chart of Same Arrival Time test screenshot**  
 ![Result Basic Test](images/Image_8.png)    
 
-### 4️⃣ [IDLE Case](https://www.qt.io/development/File_test_Scheduling/idle_cpu.csv)   
+### 4️⃣ [IDLE Case](https://raw.githubusercontent.com)   
 
 #### Input   
 Process,Arrival,Burst       
