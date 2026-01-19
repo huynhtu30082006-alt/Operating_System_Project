@@ -1,0 +1,4 @@
+process_id,arrival_time,burst_time
+P1,0,3
+P2,6,4
+P3,7,2
