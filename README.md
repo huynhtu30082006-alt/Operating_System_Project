@@ -345,6 +345,118 @@ Average Waiting Time = 1
 Average Turnaround Time = 4          
 
 
+## 👥Group Work and Task Distribution
+
+Team Member’s Contributions
+### 👤 Triệu — CSV & Data Handling
+
+Triệu was responsible for designing and implementing the data input/output module using CSV files.
+
+#### Main tasks:
+
+- Implement a module to read process data from CSV files
+
+- Validate input files and handle errors (missing file, invalid format, incorrect data)
+
+- Export scheduling results to output CSV files
+
+- Create test datasets with different sizes to evaluate correctness and scalability
+
+- Test datasets:
+
+Small test: 2–3 processes
+
+Medium test: 5–7 processes
+
+Large test: 20–50 processes
+
+- Related files:
+
+`IO.h`
+
+`IO.cpp`
+
+CSV test input files
+
+This module provides reusable and reliable data processing for all scheduling algorithms.
+
+### 👤 Thư — FCFS Scheduling Algorithm
+
+Thư was responsible for implementing the First Come First Serve (FCFS) scheduling algorithm.
+
+#### Main tasks:
+
+- Implement the FCFS algorithm according to operating system theory
+
+- Calculate key metrics:
+
+- Waiting Time
+
+- Turnaround Time
+
+- Completion Time
+
+- Verify correctness by comparing results with textbook examples
+
+Implementation location:
+
+`algorithms.h`
+
+### 👤 Linh — SJF (Non-preemptive) Scheduling Algorithm
+
+Linh was responsible for implementing the Shortest Job First (Non-preemptive) scheduling algorithm.
+
+#### Main tasks:
+
+- Implement the non-preemptive SJF algorithm
+
+- Design test cases with different arrival times
+
+- Validate and compare results to ensure correctness
+
+- Implementation location:
+
+`algorithms.h`
+
+### 👤 Tú — Gantt Chart & User Interface
+
+Tú was responsible for result visualization and user interface development.
+
+#### Main tasks:
+
+- Draw Gantt charts (initially in console, later integrated into the GUI)
+
+- Display formatted and readable process result tables
+
+- Design and implement the GUI using Qt
+
+- This component allows users to visually analyze scheduling behavior and compare algorithm performance.
+
+- Program Workflow
+
+- The user launches the application using Qt Creator
+
+ - A CSV file containing process data is selected
+
+- The program reads and validates the input data
+
+- A scheduling algorithm (FCFS or SJF) is applied
+
+- Results are displayed:
+
+Process information table
+
+Gantt chart visualization
+
+Results are exported to a CSV output file
+
+Additional Notes
+
+The project follows Object-Oriented Programming (OOP) principles
+
+Responsibilities are clearly separated into data processing, algorithms, and user interface.   
+
+> All contributions are tracked using Git version control. Individual contributions can be verified through the Git commit history.
 
 
    
