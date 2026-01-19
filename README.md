@@ -180,7 +180,10 @@ For any process `i`:
 | P1 | 0 | 4 | 0 | 4 | 4 | 0 | 0 |
 | P2 | 1 | 3 | 4 | 7 | 6 | 3 | 3 |  
 | P3 | 2 | 1 | 7 | 8 | 6 | 5 | 5 |
-| P4 | 3 | 2 | 8 | 10 | 7 | 5 | 5 |  
+| P4 | 3 | 2 | 8 | 10 | 7 | 5 | 5 |   
+
+**Figure 1 – Result FCFS Table of Basic Test screenshot**  
+![Result Basic Test](images/Image_1.png)
 
 📊 Gantt   
 
@@ -188,6 +191,9 @@ For any process `i`:
 
 Average Waiting Time = 3.25    
 Average Turnaround Time = 5.75     
+
+**Figure 2 – Result FCFS Gantt Chart of Basic Test screenshot**  
+![Result Basic Test](images/Image_2.png)
 
 - SJF
 
@@ -200,6 +206,8 @@ Average Turnaround Time = 5.75
 | P4 | 3 | 2 | 5 | 7 | 4 | 2 | 2 | 
 | P2 | 1 | 3 | 7 | 10 | 9 | 6 | 6 |   
 
+**Figure 3 – Result SJF Table of Basic Test screenshot**  
+![Result Basic Test](images/Image_3.png)      
 
 📊 Gantt   
 
@@ -208,7 +216,8 @@ Average Turnaround Time = 5.75
 Average Waiting Time = 2.5      
 Average Turnaround Time = 5     
 
-// ảnh   
+**Figure 4 – Result SJF Gantt Chart of Basic Test screenshot**  
+![Result Basic Test](images/Image_4.png) 
 
 ### 2️⃣ [Long Job Case](https://www.qt.io/development/File_test_Scheduling/long_job.csv)   
 
@@ -268,12 +277,18 @@ Check the processing order when the Arrival Time of all Processes is equal.
 | P3 | 0 | 2 | 12 | 14 | 14 | 12 | 12 |
 | P4 | 0 | 1 | 14 | 15 | 15 | 14 | 14 |  
 
+**Figure 5 – Result FCFS Table of Same Arrival Time test screenshot**  
+![Result Basic Test](images/Image_5.png)    
+
 📊 Gantt   
 
 0 ── P1 ── 8 ── P2 ── 12 ─ P3 ─ 14 ── P4 ── 15      
 
 Average Waiting Time = 8.5    
-Average Turnaround Time = 12.25        
+Average Turnaround Time = 12.25   
+
+**Figure 6 – Result FCFS Gantt Chart of Same Arrival Time test screenshot**  
+![Result Basic Test](images/Image_6.png)        
 
 - SJF
 
@@ -284,7 +299,10 @@ Average Turnaround Time = 12.25
 | P4 | 0 | 1 | 0 | 1 | 1 | 0 | 0 |      
 | P3 | 0 | 2 | 1 | 3 | 3 | 1 | 1 |       
 | P2 | 0 | 4 | 3 | 7 | 7 | 3 | 3 |   
-| P1 | 0 | 8 | 7 | 15 | 15 | 7 | 7 |     
+| P1 | 0 | 8 | 7 | 15 | 15 | 7 | 7 |    
+
+**Figure 7 – Result SJF Table of Same Arrival Time test screenshot**  
+![Result Basic Test](images/Image_7.png)    
    
 📊 Gantt   
 
@@ -293,15 +311,16 @@ Average Turnaround Time = 12.25
 Average Waiting Time = 2.75       
 Average Turnaround Time = 6.5              
 
-// ảnh   
+**Figure 8 – Result FCFS Gantt Chart of Same Arrival Time test screenshot**  
+![Result Basic Test](images/Image_8.png)    
 
 ### 4️⃣ [IDLE Case](https://www.qt.io/development/File_test_Scheduling/idle_cpu.csv)   
 
 #### Input   
-Process,Arrival,Burst    
-P1,0,3
-P2,6,4
-P3,7,2  
+Process,Arrival,Burst       
+P1,0,3   
+P2,6,4   
+P3,7,2     
 
 #### Purpose    
 This test case verifies correct handling of CPU idle periods when no process is available in the ready queue.   
@@ -325,12 +344,7 @@ The scheduler must wait until the next process arrives instead of executing prem
 Average Waiting Time = 1          
 Average Turnaround Time = 4          
 
-### 5️⃣ [Performance test Case](https://www.qt.io/development/File_test_Scheduling/stress_input_120.csv)   
 
-| Test     | #Processes | Time (s) | RAM (MB) | Result |
-| -------- | ---------- | -------- | -------- | ------ |
-| Stress-1 | 100        | 0.02     | 32       | Pass   |
-| Stress-2 | 200        | 0.05     | 38       | Pass   |
 
 
    
