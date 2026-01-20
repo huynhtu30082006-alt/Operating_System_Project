@@ -49,7 +49,7 @@ All results can be exported to CSV for verification with textbook formulas and r
 ##  ⚙️ How to run  
 
 ### Step 1 - Launch the application
-🛠️ Requirements   
+#### 🛠️ Requirements   
 For Windows
 - Windows 10+   
 
@@ -59,8 +59,8 @@ For Windows
 
 - MinGW / Visual Studio
 
-- [Download CPU Scheduling](https://www.qt.io/development/download) (Choose the appropriate version for OS).
-- Run the executable file.
+[Download CPU Scheduling](https://github.com/huynhtu30082006-alt/Operating_System_Project/releases/download/Release/Desktop_Qt_6_10_1_MinGW_64_bit-Release.zip).   
+Run the executable file.
 
 ### Step 2 - Download CSV File   
 - Clone or [Download](https://github.com/huynhtu30082006-alt/Operating_System_Project/tree/main/data) this repository to your computer. 
