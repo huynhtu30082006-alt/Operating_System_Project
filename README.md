@@ -59,8 +59,7 @@ For Windows
 
 - MinGW / Visual Studio
 
-[Download CPU Scheduling](https://github.com/huynhtu30082006-alt/Operating_System_Project/releases/download/Release/Desktop_Qt_6_10_1_MinGW_64_bit-Release.zip).   
-Run the executable file.
+[Download CPU Scheduling](https://github.com/huynhtu30082006-alt/Operating_System_Project/releases/download/Release/Desktop_Qt_6_10_1_MinGW_64_bit-Release.zip) and run the executable file.
 
 ### Step 2 - Download CSV File   
 - Clone or [Download](https://github.com/huynhtu30082006-alt/Operating_System_Project/tree/main/data) this repository to your computer. 
