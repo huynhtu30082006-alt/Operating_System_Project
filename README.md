@@ -49,7 +49,17 @@ All results can be exported to CSV for verification with textbook formulas and r
 ##  ⚙️ How to run  
 
 ### Step 1 - Launch the application
-- [Download CPU Scheduling](https://www.qt.io/development/download)   
+🛠️ Requirements   
+For Windows
+- Windows 10+   
+
+- Qt 6.x (MinGW or MSVC)   
+
+- CMake 3.16+   
+
+- MinGW / Visual Studio
+
+- [Download CPU Scheduling](https://www.qt.io/development/download) (Choose the appropriate version for OS).
 - Run the executable file.
 
 ### Step 2 - Download CSV File   
