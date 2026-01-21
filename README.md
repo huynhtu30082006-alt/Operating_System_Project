@@ -69,8 +69,8 @@ You need to build the application from source using [Qt for MacOS](https://www.q
 - Git
 
 ##### Build & Run:   
-git clone https://github.com/huynhtu30082006-alt/Operating_System_Project.git
-cd Operating_System_Project
+`git clone https://github.com/huynhtu30082006-alt/Operating_System_Project.git`    
+`cd Operating_System_Project`   
    
 👉 You can check for source code [here](https://github.com/huynhtu30082006-alt/Operating_System_Project/tree/main/src).   
 
