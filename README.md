@@ -50,11 +50,29 @@ All results can be exported to CSV for verification with textbook formulas and r
 
 ### Step 1 - Launch the application
 #### 🛠️ Requirements   
-For Windows 10 +  
+#### 🔹 Windows 10 or later
+- Download the prebuilt Windows release:
+  👉 [Download CPU Scheduling (Windows)](https://github.com/huynhtu30082006-alt/Operating_System_Project/releases/download/Release/Desktop_Qt_6_10_1_MinGW_64_bit-Release.zip)
+- Extract the `.zip` file.
+- Run `CPU_Scheduling.exe`.   
 
-- [Download CPU Scheduling](https://github.com/huynhtu30082006-alt/Operating_System_Project/releases/download/Release/Desktop_Qt_6_10_1_MinGW_64_bit-Release.zip) and run the executable file.   
+---
 
-- You can check for source code here 👉 [Source Code](https://github.com/huynhtu30082006-alt/Operating_System_Project/tree/main/src).   
+#### 🔹 macOS
+macOS does **not** support running `.exe` files.  
+You need to build the application from source using [Qt for MacOS](https://www.qt.io/development/download).
+
+##### Requirements:
+- macOS 11 or later
+- Qt 6.x (Qt Creator recommended)
+- CMake (comes with Qt)
+- Git
+
+##### Build & Run:   
+git clone https://github.com/huynhtu30082006-alt/Operating_System_Project.git
+cd Operating_System_Project
+   
+👉 You can check for source code [here](https://github.com/huynhtu30082006-alt/Operating_System_Project/tree/main/src).   
 
 ### Step 2 - Download CSV File   
 - Clone or [Download](https://github.com/huynhtu30082006-alt/Operating_System_Project/tree/main/data) this repository to your computer. 
