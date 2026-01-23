@@ -423,6 +423,7 @@ Implementation location:
 
 `algorithms.h`, `algorithms.cpp`      
 `process.h`, `process.cpp`    
+`list_process.h`, `list_process.cpp`    
 
 ### 👤 Linh — SJF (Non-preemptive) Scheduling Algorithm
 
@@ -440,6 +441,7 @@ Linh was responsible for implementing the Shortest Job First (Non-preemptive) sc
 
 `algorithms.h`, `algorithms.cpp`      
 `process.h`, `process.cpp`  
+`list_process.h`, `list_process.cpp`   
 
 ### 👤 Tú — Gantt Chart & User Interface
 
