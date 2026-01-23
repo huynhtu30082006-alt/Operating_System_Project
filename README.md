@@ -394,9 +394,8 @@ Large test: 20–50 processes
 
 - Related files:
 
-`IO.h`
+`IO.h`, `IO.cpp`
 
-`IO.cpp`
 
 CSV test input files
 
@@ -422,7 +421,8 @@ Thư was responsible for implementing the First Come First Serve (FCFS) scheduli
 
 Implementation location:
 
-`algorithms.h`
+`algorithms.h`, `algorithms.cpp`      
+`process.h`, `process.cpp`    
 
 ### 👤 Linh — SJF (Non-preemptive) Scheduling Algorithm
 
@@ -438,7 +438,8 @@ Linh was responsible for implementing the Shortest Job First (Non-preemptive) sc
 
 - Implementation location:
 
-`algorithms.h`
+`algorithms.h`, `algorithms.cpp`      
+`process.h`, `process.cpp`  
 
 ### 👤 Tú — Gantt Chart & User Interface
 
