@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_CPU_Scheduling_FILE /Users/anhthu/Desktop/anhthu/University/2ndyear/OS/Final/Operating_System_Project/src/build/Desktop_Qt_6_10_1-Debug/CPU_Scheduling.app/Contents/MacOS/CPU_Scheduling)
+set(__QT_DEPLOY_TARGET_CPU_Scheduling_TYPE EXECUTABLE)
