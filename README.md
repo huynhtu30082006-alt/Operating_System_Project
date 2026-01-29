@@ -57,21 +57,16 @@ All results can be exported to CSV for verification with textbook formulas and r
 - Run `CPU_Scheduling.exe`.   
 
 ---
+      
+#### 🔹 macOS 11 or later
 
-#### 🔹 macOS
-macOS does **not** support running `.exe` files.  
-You need to build the application from source using [Qt for MacOS](https://www.qt.io/development/download).
+Download the prebuilt macOS release:
+👉 [Download CPU Scheduling macOS](https://github.com/huynhtu30082006-alt/Operating_System_Project/releases/download/Release_2(OS)/CPU_Scheduling_macOS.zip)
 
-##### Requirements:
-- macOS 11 or later
-- Qt 6.x (Qt Creator recommended)
-- CMake (comes with Qt)
-- Git
+Extract the `.zip` file.   
 
-##### Build & Run:   
-`git clone https://github.com/huynhtu30082006-alt/Operating_System_Project.git`    
-`cd Operating_System_Project`   
-   
+Open `CPU_Scheduling.app`
+(If macOS shows a security warning: `Right click → Open → Open`)   
 👉 You can check for source code [here](https://github.com/huynhtu30082006-alt/Operating_System_Project/tree/main/src).   
 
 ### Step 2 - Download CSV File   
